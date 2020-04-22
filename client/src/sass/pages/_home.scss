@@ -1,0 +1,38 @@
+
+.section-stories {
+    margin-top: -9.5rem;
+    padding: 15rem 0 ; 
+    background-image: linear-gradient(to right bottom, $color-grey-light-1 ,$color-pink-light-0);
+}
+
+.section-portfolio {
+    background-color: $color-grey-light-1;
+    padding:10rem 0 20rem 0;
+    margin-top: 2rem;
+}
+
+.section-contact{
+    padding:15rem;
+    background-image: linear-gradient(to right bottom, $color-pink-light-1, $color-pink-medium);
+    
+}
+
+.contact {
+    background-image:linear-gradient(105deg, rgba($color-white, .8) 0%,
+    rgba($color-white, .8) 50%,
+     transparent 50%) ,
+      url(../images/back6.jpg);
+    background-size: cover;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .20);
+    height: 60rem;
+    width: 100%;
+    margin-top: -9rem;
+    animation: moveInRight 1s ease-out;
+
+    &__form {
+
+        width: 50%;
+        padding: 6rem;
+    }
+}

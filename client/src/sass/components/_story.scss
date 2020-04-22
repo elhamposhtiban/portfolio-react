@@ -1,0 +1,73 @@
+.story {
+    margin: 0 auto;
+    width: 75%;
+    box-shadow: 0 3rem 6rem rgba($color-black, .4);
+    background-color: $color-white;
+    border-radius: 3rem;
+    padding:6rem;
+    padding-left: 9rem;
+    font-size: $default-font-size;
+    transform: skewX(-12deg);
+
+
+    &__shape {
+        width: 20rem;
+        height: 20rem;
+        float:left;
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        -webkit-clip-path:circle(50% at 50% 50%); 
+        clip-path:circle(50% at 50% 50%); 
+        transform: translateX(-4rem) skewX(12deg);
+    }
+
+    &__img {
+        width: 100%;
+        margin-top: -2.5rem;
+    }
+
+    &__text {
+        transform: skewX(12deg);
+    }
+
+
+    &__navigation {
+        border-top: 1px solid $color-grey-light-2;
+        padding:2rem;
+        float: right;
+        };
+
+    &__list {
+      list-style: none;
+      text-align: center;
+      
+    };
+
+    &__item {
+     display: inline-block;
+     &:not(:last-child) {
+         margin-right: 1.5rem;
+     }
+    };
+
+    &__link {
+        &:link,
+        &:visited {
+            color: $color-pink-light;
+            text-decoration: none;
+            text-transform: uppercase;
+            display:inline-block;
+        }
+
+        &:hover,
+        &:active {
+            background-color: $color-grey-dark;
+            transition: all .2s;
+            color: $color-pink-medium;
+            box-shadow: 0 1rem 3rem rgba($color-black, .20);
+            transform: rotate(5deg) scale(1.3);
+        }
+
+    };
+
+}

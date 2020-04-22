@@ -1,0 +1,146 @@
+.card {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    height: 50rem;
+    position: relative;
+    margin-bottom: 1.5rem;
+    background-color: transparent;
+    border: none;
+    animation: moveInLeft 2s ease-out;
+
+    &__side{
+
+        color: beige;
+        font-size: 2rem;
+        height: 50rem;
+        transition: all .9s ease ;
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 5rem 6rem rgba($color-black, .20) ;
+
+        &--front {
+        background-color: white;
+        };
+
+        &--back{
+        transform: rotateY(180deg);
+        background-image:linear-gradient(to right bottom, $color-pink-light-1, $color-pink-medium );
+        }
+    }
+
+    
+    &:hover &__side--front{
+        transform: rotateY(-180deg);
+    }
+    &:hover &__side--back{
+        transform: rotateY(0);
+    }
+
+    &__picture{
+        background-size: cover;
+        height: 23rem;
+        background-blend-mode: screen;
+        -webkit-clip-path:polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        &--1{
+           background-image: linear-gradient(to right bottom, $color-pink-light-1 , $color-pink-medium ),
+            url(../images/trivia2.jpg);
+        }
+        &--2{
+            background-image: linear-gradient(to right bottom, $color-pink-light-1 , $color-pink-medium ),
+            url(../images/metro-station-people-woman-21410.jpg);
+         }
+         &--3{
+            background-image: linear-gradient(to right bottom, $color-pink-light-1 , $color-pink-medium ),
+            url(../images/giphy.gif);
+         }
+         &--4{
+            background-image: linear-gradient(to right bottom, $color-pink-light-1 , $color-pink-medium ),
+            url(../images/1.jpg);
+         }
+         &--5{
+            background-image: linear-gradient(to right bottom, $color-pink-light-1 , $color-pink-medium ),
+            url(../images/9.jpg);
+         }
+         &--6{
+            background-image: linear-gradient(to right bottom, $color-pink-light-1 , $color-pink-medium ),
+            url(../images/6.jpg);
+         }
+         &--7{
+            background-image: linear-gradient(to right bottom, $color-pink-light-1 , $color-pink-medium ),
+            url(../images/nutrifit.jpg);
+         }
+         &--8{
+            background-image: linear-gradient(to right bottom, $color-pink-light-1 , $color-pink-medium ),
+            url(../images/8.jpg);
+         }
+         &--9{
+            background-image: linear-gradient(to right bottom, $color-pink-light-1 , $color-pink-medium ),
+            url(../images/4.jpg);
+         }
+         &--10{
+            background-image: linear-gradient(to right bottom, $color-pink-light-1 , $color-pink-medium ),
+            url(../images/article.jpg);
+         }
+         &--11{
+            background-image: linear-gradient(to right bottom, $color-pink-light-1 , $color-pink-medium ),
+            url(../images/10.jpg);
+         }
+         &--12{
+            background-image: linear-gradient(to right bottom, $color-pink-light-1 , $color-pink-medium ),
+            url(../images/2.jpg);
+         }
+
+         &--13{
+            background-image: linear-gradient(to right bottom, $color-pink-light-1 , $color-pink-medium ),
+            url(../images/boogle.jpg);
+         }
+
+         &--14{
+            background-image: linear-gradient(to right bottom, $color-pink-light-1 , $color-pink-medium ),
+            url(../images/something.jpg);
+         }
+    }
+
+    &__heading {
+        font-size: 2.5rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+        color:$color-white;
+        position:absolute;
+        top: 18rem;
+        right: 2rem;
+        width: 80%;
+    }
+
+    &__heading-span {
+         padding: 1rem 1.5rem;
+         -webkit-box-decoration-break: clone;
+         box-decoration-break: clone;
+        background-image: linear-gradient(to right bottom, rgba($color-pink-light-1, .85) ,rgba($color-pink-medium, .85));
+        }
+
+        &__cta{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            text-align: center;
+
+        }
+
+        &__details {
+            color: $color-pink-dark;
+            font-size: 16.5px;
+            font-weight: 700;
+            margin-top: 1rem;
+            padding: 1rem;
+        }
+    }
