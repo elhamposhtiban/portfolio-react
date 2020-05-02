@@ -4,7 +4,22 @@
      url(../../assets/images/back16.jpg);
     background-size: cover;
     background-position: top;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 73vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 73vh, 0 100%);
     position: relative;
+    
+    @include respond (phone){
+
+        height:70vh;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%);
+    }
+
+    &__text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
 }

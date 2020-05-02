@@ -24,13 +24,13 @@ const Bio = () => {
                             About Me
                         </h2>
                     </div>
-                    <div className="row">
+                    
                         <div className="story">
                             <figure className="story__shape">
                                 <img src={ImageProfile} alt="elham poshtiban" className="story__img"/>
                             </figure>
                             <div className="story__text">
-                                <h3 className="heading-tertiary  u-margin-bottom-small"> HI! My name is Elham Poshtiban</h3>
+                                <h3 className="heading-third  u-margin-bottom-small"> HI! My name is Elham Poshtiban</h3>
                             </div>
                             <p> Passionate, detail-oriented Full Stack Web Developer with a certificate from UT Austin coding Boot-camp and degree in Software Engineering.
                                 Highly enthusiastic about coding and learning new materials.
@@ -71,7 +71,6 @@ const Bio = () => {
                                 </div>
                         </div>
                         </div>
-                    </div>
                 </section>
             </main>
         </React.Fragment>

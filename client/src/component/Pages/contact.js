@@ -4,45 +4,45 @@ import { faUser,faEnvelope, faComment } from '@fortawesome/free-solid-svg-icons'
 
 const Contact = () => {
     return (
-        <section class="section-contact">
-        <div class="row">
-            <div class="contact">
-                <div class="contact__form">
-                    <form action="#" class="form">
-                        <div class=" u-margin-bottom-medium">
-                            <h2 class="heading-secondary">
+        <section className="section-contact">
+        <div className="row">
+            <div className="contact">
+                <div className="contact__form">
+                    <form action="#" className="form">
+                        <div className=" u-margin-bottom-medium">
+                            <h2 className="heading-secondary">
                               Contact Info
                             </h2>
                         </div>
-                        <div class="form__group input-group">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text">
+                        <div className="form__group input-group">
+                          <div className="input-group-prepend">
+                            <span className="input-group-text">
                             <FontAwesomeIcon icon={faUser} size="3x" className="form__icon"/>
                             </span>
                           </div>
-                            <input type="text" placeholder="full name" id="name" class="form__input" required/>
-                            <label for="name" class="form__label">Full name</label>
+                            <input type="text" placeholder="full name" id="name" className="form__input" required/>
+                            <label htmlFor="name" className="form__label">Full name</label>
                         </div>
-                        <div class="form__group input-group">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text">
+                        <div className="form__group input-group">
+                          <div className="input-group-prepend">
+                            <span className="input-group-text">
                             <FontAwesomeIcon icon={faEnvelope} size="3x" className="form__icon"/>
                             </span>
                           </div>
-                            <input type="email" placeholder="Email address" id="email" class="form__input" required/>
-                            <label for="email" class="form__label">Email address</label>
+                            <input type="email" placeholder="Email address" id="email" className="form__input" required/>
+                            <label htmlFor="email" className="form__label">Email address</label>
                         </div>
-                        <div class="form__group input-group u-margin-bottom-medium">
-                          <div class="input-group-prepend">
-                            <span class=" input-group-text">
+                        <div className="form__group input-group u-margin-bottom-medium">
+                          <div className="input-group-prepend">
+                            <span className=" input-group-text">
                             <FontAwesomeIcon icon={faComment} size="3x" className="form__icon"/>
                             </span>
                         </div>
-                        <textarea type="text"  name="message" placeholder="Message" id="message-input" class="form__input" required></textarea>
-                            <label for="message-input" class="form__label"> Message </label>
+                        <textarea type="text"  name="message" placeholder="Message" id="message-input" className="form__input" required></textarea>
+                            <label htmlFor="message-input" className="form__label"> Message </label>
                         </div>
-                        <div class="form__group">
-                            <button class="btn btn--pink" type="submit" value="register"> Submit &rarr;</button>
+                        <div className="form__group">
+                            <button className="btn btn--pink" type="submit" value="register"> Submit &rarr;</button>
 
                         </div>
                     </form>
