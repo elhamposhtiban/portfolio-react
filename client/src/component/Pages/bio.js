@@ -3,6 +3,7 @@ import ImageProfile from "../../assets/images/elham.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faFilePdf, faEnvelope, faPhone  } from '@fortawesome/free-solid-svg-icons'
+import Resume from "../../assets/images/Resume.pdf"
 
 const Bio = () => {
     return (
@@ -53,7 +54,7 @@ const Bio = () => {
                                             </a> 
                                         </li>
                                         <li className="story__item"> 
-                                            <a href="./public/assets/images/ElhamPoshtiban Tech-Resume.pdf" className="story__link">
+                                            <a href={Resume} className="story__link">
                                             <FontAwesomeIcon icon={faFilePdf} size="2x" className="media-link"/>
                                             </a> 
                                         </li>

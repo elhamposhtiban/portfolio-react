@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faFilePdf, faEnvelope, faPhone  } from '@fortawesome/free-solid-svg-icons'
+import Resume from "../../assets/images/Resume.pdf"
 
 const Footer = () => {
     return (
@@ -12,7 +13,7 @@ const Footer = () => {
                     <ul className="footer__list">
                         <li className="footer__item"> <a href="https://github.com/elhamposhtiban" className="footer__link"><FontAwesomeIcon icon={faGithub} size="3x" className="media-link"/></a> </li>
                         <li className="footer__item"> <a href="https://www.linkedin.com/in/elham-poshtiban-2a40a4149/" className="footer__link"><FontAwesomeIcon icon={faLinkedin} size="3x" className="media-link"/></a> </li>
-                        <li className="footer__item"> <a href="../assets/images/ElhamPoshtiban Tech-Resume.pdf" className="footer__link"><FontAwesomeIcon icon={faFilePdf} size="3x" className="media-link"/></a> </li>
+                        <li className="footer__item"> <a href={Resume} className="footer__link"><FontAwesomeIcon icon={faFilePdf} size="3x" className="media-link"/></a> </li>
                         <li className="footer__item"> <a href="mailto:elham.poshtiban@gmail.com" className="footer__link"><FontAwesomeIcon icon={faEnvelope} size="3x" className="media-link"/></a> </li>
                         <li className="footer__item"> <a href="tel:2814259682" className="footer__link"><FontAwesomeIcon icon={faPhone} size="3x" className="media-link"/></a> </li>
                     </ul> 
